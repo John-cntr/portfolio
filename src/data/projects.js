@@ -1,6 +1,6 @@
 import zion from "../assets/zion.svg";
 import gesture from "../assets/gesture.svg";
-import clarify from "../assets/clarify.svg";
+import smartbot from "../assets/smartbot.svg";
 
 export const projects = [
   {
@@ -22,12 +22,12 @@ export const projects = [
     demo: "",
   },
   {
-    title: "AI Student Study Assistant",
+    title: "SmartBot AI - Enterprise Chatbot Platform",
     description:
-      "AI-powered study assistant that analyzes question banks and previous exam papers to help students prepare smarter.",
-    image: clarify,
-    stack: ["Python", "NLP"],
-    github: "https://github.com/John-cntr/clarify-ai",
+      "AI-powered enterprise chatbot platform that automates customer support and business workflows using LLMs and API integrations.",
+    image: smartbot,
+    stack: ["Python", "LLMs", "React", "API Integration"],
+    github: "https://github.com/john-cntr/smart-bot-ai-",
     demo: "",
   },
 ];
