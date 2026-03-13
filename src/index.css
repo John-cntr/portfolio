@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: rgba(255, 122, 24, 0.22);
+  color: #1f2937;
+}
+
+@layer components {
+  .section-wrapper {
+    @apply py-12;
+  }
+
+  .section-title {
+    @apply text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-100 sm:text-4xl;
+  }
+
+  .section-subtitle {
+    @apply mt-3 max-w-2xl text-sm leading-relaxed text-slate-600 dark:text-slate-300 sm:text-base;
+  }
+
+  .glass-panel {
+    @apply rounded-2xl border border-orange-100 bg-white shadow-[0_10px_30px_rgba(15,23,42,0.08)] transition duration-300 dark:border-slate-700 dark:bg-slate-800/70 dark:shadow-[0_10px_30px_rgba(2,6,23,0.45)];
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:border-blue-300/70 hover:shadow-[0_22px_44px_rgba(59,130,246,0.16)] dark:hover:border-blue-400/35 dark:hover:shadow-[0_20px_38px_rgba(59,130,246,0.12)];
+    transform-style: preserve-3d;
+  }
+
+  .card-hover:hover {
+    transform: perspective(1000px) translateY(-10px) rotateX(3deg) rotateY(-2.5deg)
+      scale(1.01);
+  }
+
+  .hero-stage {
+    @apply relative;
+    perspective: 1300px;
+  }
+
+  .hero-main {
+    @apply relative z-10;
+  }
+
+  .hero-side-greeting {
+    @apply absolute z-0 rounded-full border border-blue-200/70 bg-white/55 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-slate-700 shadow-sm backdrop-blur-lg dark:border-slate-600/70 dark:bg-slate-800/45 dark:text-slate-200;
+    transform-style: preserve-3d;
+  }
+
+  .hero-side-card {
+    @apply absolute z-0 w-56 rounded-2xl border border-blue-200/70 bg-white/45 p-4 shadow-[0_10px_26px_rgba(59,130,246,0.10)] backdrop-blur-lg dark:border-slate-600/70 dark:bg-slate-800/40;
+    transform-style: preserve-3d;
+  }
+
+  .hero-side-card-title {
+    @apply text-[11px] font-bold uppercase tracking-[0.14em] text-slate-800 dark:text-slate-100;
+  }
+
+  .hero-side-card-text {
+    @apply mt-1 text-xs leading-relaxed text-slate-700 dark:text-slate-300;
+  }
+
+}
