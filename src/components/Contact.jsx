@@ -35,7 +35,7 @@ export default function Contact() {
       <div className="mt-8 grid gap-6">
         <motion.form
           className="glass-panel card-hover space-y-5 p-6"
-          action="https://formspree.io/f/your-form-id"
+          action="https://formspree.io/f/mbdzyell"
           method="POST"
           initial={{ opacity: 0, y: 26 }}
           whileInView={{ opacity: 1, y: 0 }}
