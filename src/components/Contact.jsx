@@ -54,7 +54,7 @@ export default function Contact() {
               name="name"
               type="text"
               required
-              className="w-full rounded-xl border-slate-300 bg-white/80 text-slate-900 placeholder:text-slate-400 focus:border-slate-900 focus:ring-slate-900 dark:border-slate-600 dark:bg-slate-800/80 dark:text-slate-100 dark:focus:border-slate-100 dark:focus:ring-slate-100"
+              className="w-full rounded-xl border-slate-300 bg-white/80 text-slate-900 placeholder:text-slate-400 focus:border-primary focus:ring-primary dark:border-slate-600 dark:bg-slate-800/80 dark:text-slate-100"
               placeholder="Your name"
             />
           </div>
@@ -70,7 +70,7 @@ export default function Contact() {
               name="email"
               type="email"
               required
-              className="w-full rounded-xl border-slate-300 bg-white/80 text-slate-900 placeholder:text-slate-400 focus:border-slate-900 focus:ring-slate-900 dark:border-slate-600 dark:bg-slate-800/80 dark:text-slate-100 dark:focus:border-slate-100 dark:focus:ring-slate-100"
+              className="w-full rounded-xl border-slate-300 bg-white/80 text-slate-900 placeholder:text-slate-400 focus:border-primary focus:ring-primary dark:border-slate-600 dark:bg-slate-800/80 dark:text-slate-100"
               placeholder="you@example.com"
             />
           </div>
@@ -86,13 +86,13 @@ export default function Contact() {
               name="message"
               rows="5"
               required
-              className="w-full rounded-xl border-slate-300 bg-white/80 text-slate-900 placeholder:text-slate-400 focus:border-slate-900 focus:ring-slate-900 dark:border-slate-600 dark:bg-slate-800/80 dark:text-slate-100 dark:focus:border-slate-100 dark:focus:ring-slate-100"
+              className="w-full rounded-xl border-slate-300 bg-white/80 text-slate-900 placeholder:text-slate-400 focus:border-primary focus:ring-primary dark:border-slate-600 dark:bg-slate-800/80 dark:text-slate-100"
               placeholder="Tell me about your project..."
             />
           </div>
           <button
             type="submit"
-            className="inline-flex rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
+            className="inline-flex rounded-xl bg-primary px-5 py-3 text-sm font-semibold text-white transition hover:bg-primary/90"
           >
             Send Message
           </button>
@@ -120,7 +120,7 @@ export default function Contact() {
                   href={link.href}
                   target={link.external ? "_blank" : undefined}
                   rel={link.external ? "noreferrer" : undefined}
-                  className="flex items-center gap-3 rounded-xl border border-slate-300/80 bg-white/70 px-4 py-3 text-sm font-medium text-slate-700 transition hover:border-slate-900 hover:text-slate-900 dark:border-slate-700 dark:bg-slate-800/70 dark:text-slate-200 dark:hover:border-slate-200 dark:hover:text-slate-100"
+                  className="flex items-center gap-3 rounded-xl border border-slate-300/80 bg-white/70 px-4 py-3 text-sm font-medium text-slate-700 transition hover:border-primary hover:text-primary dark:border-slate-700 dark:bg-slate-800/70 dark:text-slate-200"
                 >
                   <Icon size={16} />
                   {link.label}

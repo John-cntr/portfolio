@@ -21,7 +21,7 @@ const links = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-slate-200/80 py-8 dark:border-slate-800">
+    <footer className="border-t border-emerald-100/80 py-8 dark:border-slate-800">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 text-sm text-slate-600 dark:text-slate-300 md:flex-row">
         <p>© 2026 Johnson Kaparthi</p>
         <div className="flex flex-wrap items-center justify-center gap-2">
@@ -33,7 +33,7 @@ export default function Footer() {
                 href={link.href}
                 target={link.external ? "_blank" : undefined}
                 rel={link.external ? "noreferrer" : undefined}
-                className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 transition hover:border-slate-900 hover:text-slate-900 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-200 dark:hover:border-slate-200 dark:hover:text-slate-100"
+                className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 transition hover:border-primary hover:text-primary dark:border-slate-600 dark:bg-slate-800 dark:text-slate-200"
               >
                 <Icon size={14} />
                 {link.label}
