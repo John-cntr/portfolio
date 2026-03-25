@@ -26,7 +26,7 @@ export default function ProjectCard({ project, index }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
     >
-      <div className="relative h-52 overflow-hidden border-b-2 border-ink">
+      <div className="relative h-52 overflow-hidden border-b-2 border-white/20">
         <img
           src={project.image}
           alt={project.title}
@@ -36,8 +36,10 @@ export default function ProjectCard({ project, index }) {
       </div>
 
       <div className="p-6">
-        <h3 className="text-xl font-extrabold text-ink">{project.title}</h3>
-        <p className="mt-3 text-sm leading-relaxed text-slate-700">
+        <h3 className="text-xl font-extrabold text-ink" style={{ fontFamily: "Playfair Display, Georgia, serif" }}>
+          {project.title}
+        </h3>
+        <p className="mt-3 text-sm leading-relaxed text-muted">
           {project.description}
         </p>
 
@@ -45,7 +47,7 @@ export default function ProjectCard({ project, index }) {
           {project.stack.map((tech) => (
             <span
               key={tech}
-              className="rounded-full border-2 border-ink bg-accent px-3 py-1 text-xs font-bold text-ink shadow-toon"
+              className="rounded-full border-2 border-white/40 bg-accent/90 px-3 py-1 text-xs font-bold text-black shadow-sticker"
             >
               {tech}
             </span>
@@ -57,7 +59,7 @@ export default function ProjectCard({ project, index }) {
             href={project.github}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-xl border-2 border-ink bg-white px-3 py-2 text-xs font-bold text-ink transition hover:-translate-y-0.5 hover:shadow-toon"
+            className="inline-flex items-center gap-2 rounded-xl border-2 border-white/40 bg-white/10 px-3 py-2 text-xs font-bold text-ink transition hover:-translate-y-0.5 hover:shadow-sticker"
           >
             <Github size={14} />
             GitHub
@@ -67,7 +69,7 @@ export default function ProjectCard({ project, index }) {
               href={project.demo}
               target="_blank"
               rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-xl bg-primary px-3 py-2 text-xs font-bold text-white shadow-toon transition hover:-translate-y-0.5"
+            className="inline-flex items-center gap-2 rounded-xl bg-primary px-3 py-2 text-xs font-bold text-white shadow-glow transition hover:-translate-y-0.5"
             >
               <ExternalLink size={14} />
               Live Demo

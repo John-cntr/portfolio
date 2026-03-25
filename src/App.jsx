@@ -26,7 +26,9 @@ export default function App() {
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-base text-ink transition-colors duration-300">
       <div className="pointer-events-none fixed inset-0 -z-10 bg-hero-mesh" />
-      <div className="pointer-events-none fixed inset-0 -z-10 bg-dot-pop bg-[size:20px_20px]" />
+      <div className="spotlight-layer" />
+      <div className="halftone-layer" />
+      <div className="film-grain" />
       <Navbar sections={SECTIONS} isDark={isDark} setIsDark={setIsDark} />
       <main className="mx-auto max-w-6xl px-6 pb-6">
         <Hero />

@@ -57,12 +57,14 @@ export default function Skills() {
             viewport={{ once: true, amount: 0.25 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
           >
-            <h3 className="text-xl font-extrabold text-ink">{group.title}</h3>
+            <h3 className="text-xl font-extrabold text-ink" style={{ fontFamily: "Playfair Display, Georgia, serif" }}>
+              {group.title}
+            </h3>
             <div className="mt-4 flex flex-wrap gap-3">
               {group.items.map((item) => (
                 <span
                   key={item}
-                  className="rounded-2xl border-2 border-ink bg-white px-3.5 py-2 text-sm font-bold text-ink shadow-toon"
+                  className="rounded-2xl border-2 border-white/40 bg-white/10 px-3.5 py-2 text-sm font-bold text-ink shadow-sticker"
                 >
                   {item}
                 </span>

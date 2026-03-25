@@ -43,10 +43,7 @@ export default function Contact() {
           transition={{ duration: 0.55 }}
         >
           <div>
-            <label
-              htmlFor="name"
-              className="mb-2 block text-sm font-bold text-ink"
-            >
+            <label htmlFor="name" className="mb-2 block text-sm font-bold text-ink">
               Name
             </label>
             <input
@@ -54,15 +51,12 @@ export default function Contact() {
               name="name"
               type="text"
               required
-              className="w-full rounded-2xl border-2 border-ink bg-white text-ink placeholder:text-slate-400 focus:border-ink focus:ring-ink"
+              className="w-full rounded-2xl border-2 border-white/30 bg-white/10 text-ink placeholder:text-muted focus:border-accent focus:ring-accent"
               placeholder="Your name"
             />
           </div>
           <div>
-            <label
-              htmlFor="email"
-              className="mb-2 block text-sm font-bold text-ink"
-            >
+            <label htmlFor="email" className="mb-2 block text-sm font-bold text-ink">
               Email
             </label>
             <input
@@ -70,15 +64,12 @@ export default function Contact() {
               name="email"
               type="email"
               required
-              className="w-full rounded-2xl border-2 border-ink bg-white text-ink placeholder:text-slate-400 focus:border-ink focus:ring-ink"
+              className="w-full rounded-2xl border-2 border-white/30 bg-white/10 text-ink placeholder:text-muted focus:border-accent focus:ring-accent"
               placeholder="you@example.com"
             />
           </div>
           <div>
-            <label
-              htmlFor="message"
-              className="mb-2 block text-sm font-bold text-ink"
-            >
+            <label htmlFor="message" className="mb-2 block text-sm font-bold text-ink">
               Message
             </label>
             <textarea
@@ -86,13 +77,13 @@ export default function Contact() {
               name="message"
               rows="5"
               required
-              className="w-full rounded-2xl border-2 border-ink bg-white text-ink placeholder:text-slate-400 focus:border-ink focus:ring-ink"
+              className="w-full rounded-2xl border-2 border-white/30 bg-white/10 text-ink placeholder:text-muted focus:border-accent focus:ring-accent"
               placeholder="Tell me about your project..."
             />
           </div>
           <button
             type="submit"
-            className="inline-flex rounded-2xl bg-primary px-5 py-3 text-sm font-bold text-white shadow-toon transition hover:-translate-y-0.5"
+            className="btn-primary"
           >
             Send Message
           </button>
@@ -105,10 +96,10 @@ export default function Contact() {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.55, delay: 0.08 }}
         >
-          <h3 className="text-xl font-extrabold text-ink">
+          <h3 className="text-xl font-extrabold text-ink" style={{ fontFamily: "Playfair Display, Georgia, serif" }}>
             Connect Online
           </h3>
-          <p className="mt-3 text-sm leading-relaxed text-slate-700">
+          <p className="mt-3 text-sm leading-relaxed text-muted">
             Prefer social platforms? Reach out directly through these channels.
           </p>
           <div className="mt-6 space-y-3">
@@ -120,7 +111,7 @@ export default function Contact() {
                   href={link.href}
                   target={link.external ? "_blank" : undefined}
                   rel={link.external ? "noreferrer" : undefined}
-                  className="flex items-center gap-3 rounded-2xl border-2 border-ink bg-white px-4 py-3 text-sm font-bold text-ink transition hover:-translate-y-0.5 hover:shadow-toon"
+                  className="flex items-center gap-3 rounded-2xl border-2 border-white/40 bg-white/10 px-4 py-3 text-sm font-bold text-ink transition hover:-translate-y-0.5 hover:shadow-sticker"
                 >
                   <Icon size={16} />
                   {link.label}

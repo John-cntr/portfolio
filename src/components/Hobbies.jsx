@@ -49,13 +49,13 @@ export default function Hobbies() {
               viewport={{ once: true, amount: 0.25 }}
               transition={{ duration: 0.45, delay: index * 0.08 }}
             >
-              <div className="mb-4 inline-flex rounded-2xl border-2 border-ink bg-accent p-3 text-ink shadow-toon">
+              <div className="mb-4 inline-flex rounded-2xl border-2 border-white/40 bg-accent p-3 text-black shadow-sticker">
                 <Icon size={20} />
               </div>
-              <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
+              <h3 className="text-lg font-extrabold text-ink" style={{ fontFamily: "Playfair Display, Georgia, serif" }}>
                 {hobby.title}
               </h3>
-              <p className="mt-3 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+              <p className="mt-3 text-sm leading-relaxed text-muted">
                 {hobby.description}
               </p>
             </motion.article>
