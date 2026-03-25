@@ -31,12 +31,12 @@ export default function Timeline() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.55, delay: index * 0.08 }}
           >
-            <span className="absolute -left-[35px] top-1 inline-block h-3.5 w-3.5 rounded-full bg-accent shadow-glow" />
-            <p className="text-sm font-semibold text-accent">{item.year}</p>
-            <h3 className="mt-1 text-lg font-extrabold text-ink" style={{ fontFamily: "Playfair Display, Georgia, serif" }}>
+            <span className="absolute -left-[35px] top-1 inline-block h-3.5 w-3.5 rounded-full bg-slate-900 shadow-[0_0_0_5px_rgba(15,23,42,0.18)] dark:bg-slate-100" />
+            <p className="text-sm font-semibold text-slate-600 dark:text-slate-300">{item.year}</p>
+            <h3 className="mt-1 text-lg font-semibold text-slate-900 dark:text-slate-100">
               {item.title}
             </h3>
-            <p className="mt-2 text-sm leading-relaxed text-muted">
+            <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
               {item.text}
             </p>
           </motion.div>

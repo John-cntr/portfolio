@@ -7,9 +7,9 @@ export default function Navbar({ sections, isDark, setIsDark }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b-2 border-white/30 bg-black/30 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b-2 border-ink bg-white/90 backdrop-blur">
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-        <a href="#home" className="text-lg font-extrabold tracking-tight text-ink" style={{ fontFamily: "Playfair Display, Georgia, serif" }}>
+        <a href="#home" className="font-fredoka text-lg font-extrabold tracking-tight text-ink">
           Johnson Kaparthi
         </a>
 
@@ -18,7 +18,7 @@ export default function Navbar({ sections, isDark, setIsDark }) {
             <a
               key={section.id}
               href={`#${section.id}`}
-              className="text-sm font-semibold text-muted transition hover:text-ink"
+              className="text-sm font-semibold text-slate-700 transition hover:text-ink"
             >
               {section.label}
             </a>
@@ -32,7 +32,7 @@ export default function Navbar({ sections, isDark, setIsDark }) {
             type="button"
             aria-label="Open menu"
             onClick={() => setMenuOpen((prev) => !prev)}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border-2 border-white/30 bg-white/10 text-ink"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-300/80 bg-white/70 text-slate-700 dark:border-slate-600 dark:bg-slate-800/80 dark:text-slate-200"
           >
             {menuOpen ? <X size={18} /> : <Menu size={18} />}
           </button>
@@ -53,7 +53,7 @@ export default function Navbar({ sections, isDark, setIsDark }) {
                   <a
                     href={`#${section.id}`}
                     onClick={() => setMenuOpen(false)}
-                    className="text-sm font-semibold text-muted transition hover:text-ink"
+                    className="text-sm font-semibold text-slate-700 transition hover:text-ink"
                   >
                     {section.label}
                   </a>

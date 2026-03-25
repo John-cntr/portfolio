@@ -55,33 +55,32 @@ export default function Hero() {
           transition={{ duration: 0.7 }}
           className="hero-main text-center"
         >
-          <p className="badge-sticker">
+          <p className="inline-flex items-center rounded-full border-2 border-ink bg-white px-4 py-1 text-xs font-bold uppercase tracking-[0.18em] text-ink shadow-toon">
             AI / ML Engineer
           </p>
 
-          <h1 className="mt-6 text-5xl font-extrabold tracking-tight text-ink sm:text-6xl lg:text-7xl" style={{ fontFamily: "Playfair Display, Georgia, serif" }}>
+          <h1 className="mt-6 text-5xl font-extrabold tracking-tight text-ink sm:text-6xl lg:text-7xl">
             Johnson Kaparthi
           </h1>
 
-          <p className="mt-4 text-xl font-semibold text-muted sm:text-2xl">
+          <p className="mt-4 text-xl font-semibold text-slate-800 sm:text-2xl">
             AI / ML Engineer
           </p>
 
-          <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
+          <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-slate-700 sm:text-lg">
             Building intelligent AI systems, machine learning tools, and
             real-world automation projects.
           </p>
-          <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-muted sm:text-base">
+          <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-slate-700 sm:text-base">
             I focus on practical products that combine model intelligence,
             clean engineering, and user-friendly interfaces for real impact.
           </p>
 
           <div className="mt-7 flex flex-wrap justify-center gap-3">
-            {BADGES.map((badge, badgeIndex) => (
+            {BADGES.map((badge) => (
               <span
                 key={badge}
-                className="badge-sticker float-slow"
-                style={{ animationDelay: `${badgeIndex * 0.35}s` }}
+                className="rounded-full border-2 border-ink bg-white px-3.5 py-1.5 text-sm font-semibold text-ink shadow-toon"
               >
                 {badge}
               </span>
@@ -91,13 +90,13 @@ export default function Hero() {
           <div className="mt-9 flex flex-wrap justify-center gap-4">
             <a
               href="#projects"
-              className="btn-primary"
+              className="inline-flex items-center gap-2 rounded-2xl bg-primary px-6 py-3 text-sm font-bold text-white shadow-toon transition hover:-translate-y-0.5"
             >
               View Projects <ArrowDownRight size={16} />
             </a>
             <a
               href="/resume.pdf"
-              className="btn-secondary"
+              className="inline-flex items-center gap-2 rounded-2xl border-2 border-ink bg-white px-6 py-3 text-sm font-bold text-ink transition hover:-translate-y-0.5 hover:shadow-toon"
             >
               Download Resume <Download size={16} />
             </a>

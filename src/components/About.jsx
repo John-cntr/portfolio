@@ -75,16 +75,16 @@ export default function About() {
 
       <div className="mt-8 grid gap-6 lg:grid-cols-2">
         <motion.article
-          className="rounded-[28px] border-2 border-white/20 bg-white/5 p-5 shadow-poster backdrop-blur"
+          className="rounded-[28px] border-2 border-ink bg-white/90 p-5 shadow-toon backdrop-blur"
           initial={{ opacity: 0, y: 18 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.45 }}
         >
-          <h3 className="text-xl font-extrabold text-ink" style={{ fontFamily: "Playfair Display, Georgia, serif" }}>
+          <h3 className="text-xl font-extrabold text-ink">
             About Me Journey
           </h3>
-          <p className="mt-2 text-sm leading-relaxed text-muted">
+          <p className="mt-2 text-sm leading-relaxed text-slate-700">
             My learning journey started with core programming and gradually
             evolved into artificial intelligence, problem solving, and building
             full-stack intelligent systems.
@@ -96,7 +96,7 @@ export default function About() {
               return (
                 <motion.div
                   key={step.title}
-                  className="group rounded-[24px] border-2 border-white/20 bg-white/10 p-4 shadow-sticker transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.01]"
+                  className="group rounded-[24px] border-2 border-ink bg-white p-4 shadow-toon transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.01]"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.2 }}
@@ -104,7 +104,7 @@ export default function About() {
                 >
                   <div className="flex items-start gap-3">
                     <motion.span
-                      className="mt-0.5 inline-flex rounded-xl border-2 border-white/40 bg-accent p-2 text-black shadow-sticker"
+                      className="mt-0.5 inline-flex rounded-xl border-2 border-ink bg-accent p-2 text-ink shadow-toon"
                       animate={{ y: [0, -2, 0] }}
                       transition={{
                         duration: 1.8,
@@ -115,10 +115,10 @@ export default function About() {
                       <Icon size={16} />
                     </motion.span>
                     <div>
-                      <h4 className="text-sm font-extrabold text-ink" style={{ fontFamily: "Playfair Display, Georgia, serif" }}>
+                      <h4 className="text-sm font-extrabold text-ink">
                         {step.title}
                       </h4>
-                      <p className="mt-1 text-xs leading-relaxed text-muted">
+                      <p className="mt-1 text-xs leading-relaxed text-slate-700">
                         {step.description}
                       </p>
                     </div>
@@ -130,7 +130,7 @@ export default function About() {
         </motion.article>
 
         <motion.article
-          className="rounded-[28px] border-2 border-white/20 bg-white/5 p-5 shadow-poster backdrop-blur"
+          className="rounded-[28px] border-2 border-ink bg-white/90 p-5 shadow-toon backdrop-blur"
           initial={{ opacity: 0, y: 18 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
@@ -138,18 +138,18 @@ export default function About() {
         >
           <div className="flex items-center gap-2">
             <GraduationCap size={18} className="text-ink" />
-            <h3 className="text-xl font-extrabold text-ink" style={{ fontFamily: "Playfair Display, Georgia, serif" }}>
+            <h3 className="text-xl font-extrabold text-ink">
               Education Timeline
             </h3>
           </div>
-          <p className="mt-2 text-sm leading-relaxed text-muted">
+          <p className="mt-2 text-sm leading-relaxed text-slate-700">
             Expand this card to view the full education path through an
             animated timeline.
           </p>
 
           <div className="relative mt-6 pl-8">
             <motion.div
-              className="absolute left-[13px] top-1 w-[3px] rounded-full bg-gradient-to-b from-ink via-primary/60 to-transparent"
+              className="absolute left-[13px] top-1 w-[3px] rounded-full bg-gradient-to-b from-ink via-slate-500/80 to-transparent"
               initial={{ height: 0 }}
               whileInView={{ height: "92%" }}
               viewport={{ once: true, amount: 0.2 }}
@@ -171,7 +171,7 @@ export default function About() {
                     onMouseLeave={() => setHoveredEducation(null)}
                   >
                     <motion.span
-                      className="absolute -left-[27px] top-5 inline-flex h-3 w-3 rounded-full bg-primary shadow-glow"
+                      className="absolute -left-[27px] top-5 inline-flex h-3 w-3 rounded-full bg-ink"
                       initial={{ scale: 0.5, opacity: 0.45 }}
                       whileInView={{ scale: 1, opacity: 1 }}
                       viewport={{ once: true }}
@@ -188,19 +188,19 @@ export default function About() {
                       }
                     />
 
-                    <div className="group rounded-[24px] border-2 border-white/20 bg-white/10 p-4 shadow-sticker transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.01]">
-                      <h4 className="text-sm font-extrabold text-ink" style={{ fontFamily: "Playfair Display, Georgia, serif" }}>
+                    <div className="group rounded-[24px] border-2 border-ink bg-white p-4 shadow-toon transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.01]">
+                      <h4 className="text-sm font-extrabold text-ink">
                         {item.title}
                       </h4>
                       {item.school ? (
-                        <p className="mt-1 text-xs font-semibold text-muted">
+                        <p className="mt-1 text-xs font-semibold text-slate-700">
                           {item.school}
                         </p>
                       ) : null}
-                      <p className="mt-1 text-xs font-bold text-accent">
+                      <p className="mt-1 text-xs font-bold text-ink">
                         {item.period}
                       </p>
-                      <p className="mt-2 text-xs leading-relaxed text-muted">
+                      <p className="mt-2 text-xs leading-relaxed text-slate-700">
                         {item.description}
                       </p>
                     </div>

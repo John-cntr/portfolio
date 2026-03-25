@@ -7,28 +7,25 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#d7263d",
-        accent: "#f5c542",
-        base: "#0b0b10",
-        ink: "#f9f4e8",
-        muted: "#b8b3a7",
+        primary: "#ff5a3c",
+        accent: "#f7c948",
+        base: "#fff7e6",
+        ink: "#1f1b16",
       },
       fontFamily: {
-        sans: ["Fredoka", "ui-sans-serif", "system-ui", "sans-serif"],
-        display: ["Playfair Display", "ui-serif", "Georgia", "serif"],
+        sans: ["Baloo 2", "Fredoka", "ui-sans-serif", "system-ui", "sans-serif"],
+        fredoka: ["Fredoka", "ui-sans-serif", "system-ui", "sans-serif"],
       },
       boxShadow: {
-        glow: "0 0 40px rgba(215, 38, 61, 0.45)",
-        poster: "0 24px 60px rgba(0, 0, 0, 0.55)",
-        sticker: "6px 6px 0 rgba(0, 0, 0, 0.6)",
+        glow: "0 0 34px rgba(255, 90, 60, 0.35)",
+        toon: "8px 8px 0 rgba(31, 27, 22, 0.9)",
+        toon-lg: "12px 12px 0 rgba(31, 27, 22, 0.9)",
       },
       backgroundImage: {
         "hero-mesh":
-          "radial-gradient(at 18% 10%, rgba(215, 38, 61, 0.22) 0px, transparent 55%), radial-gradient(at 82% 12%, rgba(245, 197, 66, 0.24) 0px, transparent 55%), radial-gradient(at 26% 88%, rgba(100, 210, 255, 0.14) 0px, transparent 55%)",
-        spotlight:
-          "radial-gradient(circle at 30% 20%, rgba(245, 197, 66, 0.35), transparent 45%), radial-gradient(circle at 70% 10%, rgba(215, 38, 61, 0.35), transparent 50%)",
-        halftone:
-          "radial-gradient(rgba(249,244,232,0.10) 1px, transparent 1px)",
+          "radial-gradient(at 16% 10%, rgba(255, 90, 60, 0.18) 0px, transparent 55%), radial-gradient(at 86% 16%, rgba(247, 201, 72, 0.22) 0px, transparent 55%), radial-gradient(at 26% 88%, rgba(126, 217, 87, 0.18) 0px, transparent 55%)",
+        "dot-pop":
+          "radial-gradient(rgba(31,27,22,0.08) 1px, transparent 1px)",
       },
     },
   },
