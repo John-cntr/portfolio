@@ -7,19 +7,19 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#ff7a18",
-        accent: "#06b6d4",
-        base: "#fffaf5",
+        primary: "#2f6f4e",
+        accent: "#8f7a3a",
+        base: "#f5f4ee",
       },
       fontFamily: {
         sans: ["Inter", "Poppins", "ui-sans-serif", "system-ui", "sans-serif"],
       },
       boxShadow: {
-        glow: "0 0 34px rgba(59, 130, 246, 0.18)",
+        glow: "0 0 34px rgba(47, 111, 78, 0.22)",
       },
       backgroundImage: {
         "hero-mesh":
-          "radial-gradient(at 16% 10%, rgba(255, 122, 24, 0.18) 0px, transparent 50%), radial-gradient(at 86% 16%, rgba(255, 179, 118, 0.2) 0px, transparent 50%), radial-gradient(at 26% 88%, rgba(255, 210, 178, 0.25) 0px, transparent 50%)",
+          "radial-gradient(at 16% 10%, rgba(47, 111, 78, 0.18) 0px, transparent 50%), radial-gradient(at 86% 16%, rgba(143, 122, 58, 0.18) 0px, transparent 50%), radial-gradient(at 26% 88%, rgba(203, 193, 165, 0.25) 0px, transparent 50%)",
       },
     },
   },

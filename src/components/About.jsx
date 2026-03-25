@@ -96,7 +96,7 @@ export default function About() {
               return (
                 <motion.div
                   key={step.title}
-                  className="group rounded-[20px] border border-white/60 bg-white/85 p-4 shadow-[0_8px_20px_rgba(15,23,42,0.08)] transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.01] hover:border-blue-300/70 hover:shadow-[0_22px_40px_rgba(59,130,246,0.15)] dark:border-slate-600 dark:bg-slate-700/60 dark:hover:border-blue-400/35"
+                  className="group rounded-[20px] border border-white/60 bg-white/85 p-4 shadow-[0_8px_20px_rgba(15,23,42,0.08)] transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.01] hover:border-emerald-300/70 hover:shadow-[0_22px_40px_rgba(47,111,78,0.15)] dark:border-slate-600 dark:bg-slate-700/60 dark:hover:border-emerald-400/35"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.2 }}
@@ -149,7 +149,7 @@ export default function About() {
 
           <div className="relative mt-6 pl-8">
             <motion.div
-              className="absolute left-[13px] top-1 w-[2px] rounded-full bg-gradient-to-b from-primary via-orange-400/70 to-transparent"
+              className="absolute left-[13px] top-1 w-[2px] rounded-full bg-gradient-to-b from-primary via-emerald-300/70 to-transparent"
               initial={{ height: 0 }}
               whileInView={{ height: "92%" }}
               viewport={{ once: true, amount: 0.2 }}
@@ -180,15 +180,15 @@ export default function About() {
                         isHovered
                           ? {
                               boxShadow:
-                                "0 0 0 8px rgba(255,122,24,0.18), 0 0 22px rgba(255,122,24,0.35)",
+                                "0 0 0 8px rgba(47,111,78,0.18), 0 0 22px rgba(47,111,78,0.35)",
                             }
                           : {
-                              boxShadow: "0 0 0 4px rgba(255,122,24,0.14)",
+                              boxShadow: "0 0 0 4px rgba(47,111,78,0.14)",
                             }
                       }
                     />
 
-                    <div className="group rounded-[20px] border border-white/60 bg-white/85 p-4 shadow-[0_8px_20px_rgba(15,23,42,0.08)] transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.01] hover:border-blue-300/70 hover:shadow-[0_22px_40px_rgba(59,130,246,0.15)] dark:border-slate-600 dark:bg-slate-700/60 dark:hover:border-blue-400/35">
+                    <div className="group rounded-[20px] border border-white/60 bg-white/85 p-4 shadow-[0_8px_20px_rgba(15,23,42,0.08)] transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.01] hover:border-emerald-300/70 hover:shadow-[0_22px_40px_rgba(47,111,78,0.15)] dark:border-slate-600 dark:bg-slate-700/60 dark:hover:border-emerald-400/35">
                       <h4 className="text-sm font-semibold text-black dark:text-slate-100">
                         {item.title}
                       </h4>

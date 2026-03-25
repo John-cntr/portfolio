@@ -9,7 +9,7 @@ html {
 }
 
 ::selection {
-  background: rgba(255, 122, 24, 0.22);
+  background: rgba(47, 111, 78, 0.22);
   color: #1f2937;
 }
 
@@ -27,11 +27,11 @@ html {
   }
 
   .glass-panel {
-    @apply rounded-2xl border border-orange-100 bg-white shadow-[0_10px_30px_rgba(15,23,42,0.08)] transition duration-300 dark:border-slate-700 dark:bg-slate-800/70 dark:shadow-[0_10px_30px_rgba(2,6,23,0.45)];
+    @apply rounded-2xl border border-emerald-100 bg-white shadow-[0_10px_30px_rgba(15,23,42,0.08)] transition duration-300 dark:border-slate-700 dark:bg-slate-800/70 dark:shadow-[0_10px_30px_rgba(2,6,23,0.45)];
   }
 
   .card-hover {
-    @apply transition-all duration-300 hover:border-blue-300/70 hover:shadow-[0_22px_44px_rgba(59,130,246,0.16)] dark:hover:border-blue-400/35 dark:hover:shadow-[0_20px_38px_rgba(59,130,246,0.12)];
+    @apply transition-all duration-300 hover:border-emerald-300/70 hover:shadow-[0_22px_44px_rgba(47,111,78,0.16)] dark:hover:border-emerald-400/35 dark:hover:shadow-[0_20px_38px_rgba(47,111,78,0.12)];
     transform-style: preserve-3d;
   }
 
@@ -50,12 +50,12 @@ html {
   }
 
   .hero-side-greeting {
-    @apply absolute z-0 rounded-full border border-blue-200/70 bg-white/55 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-slate-700 shadow-sm backdrop-blur-lg dark:border-slate-600/70 dark:bg-slate-800/45 dark:text-slate-200;
+    @apply absolute z-0 rounded-full border border-emerald-200/70 bg-white/55 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-slate-700 shadow-sm backdrop-blur-lg dark:border-slate-600/70 dark:bg-slate-800/45 dark:text-slate-200;
     transform-style: preserve-3d;
   }
 
   .hero-side-card {
-    @apply absolute z-0 w-56 rounded-2xl border border-blue-200/70 bg-white/45 p-4 shadow-[0_10px_26px_rgba(59,130,246,0.10)] backdrop-blur-lg dark:border-slate-600/70 dark:bg-slate-800/40;
+    @apply absolute z-0 w-56 rounded-2xl border border-emerald-200/70 bg-white/45 p-4 shadow-[0_10px_26px_rgba(47,111,78,0.12)] backdrop-blur-lg dark:border-slate-600/70 dark:bg-slate-800/40;
     transform-style: preserve-3d;
   }
 

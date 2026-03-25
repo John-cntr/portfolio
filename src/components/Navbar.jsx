@@ -7,7 +7,7 @@ export default function Navbar({ sections, isDark, setIsDark }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-orange-100/80 bg-white/75 backdrop-blur-xl dark:border-slate-800 dark:bg-slate-900/70">
+    <header className="sticky top-0 z-50 border-b border-emerald-100/80 bg-white/75 backdrop-blur-xl dark:border-slate-800 dark:bg-slate-900/70">
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <a href="#home" className="font-poppins text-lg font-semibold tracking-tight text-slate-900 dark:text-slate-100">
           Johnson Kaparthi

@@ -62,7 +62,7 @@ export default function Skills() {
               {group.items.map((item) => (
                 <span
                   key={item}
-                  className="rounded-xl border border-orange-200 bg-white px-3.5 py-2 text-sm font-medium text-slate-700 shadow-sm dark:border-slate-600 dark:bg-slate-700 dark:text-slate-200"
+                  className="rounded-xl border border-emerald-200 bg-white px-3.5 py-2 text-sm font-medium text-slate-700 shadow-sm dark:border-slate-600 dark:bg-slate-700 dark:text-slate-200"
                 >
                   {item}
                 </span>

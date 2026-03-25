@@ -92,7 +92,7 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            className="inline-flex rounded-xl bg-primary px-5 py-3 text-sm font-semibold text-white transition hover:bg-orange-500"
+            className="inline-flex rounded-xl bg-primary px-5 py-3 text-sm font-semibold text-white transition hover:bg-primary/90"
           >
             Send Message
           </button>

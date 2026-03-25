@@ -21,7 +21,7 @@ const links = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-orange-100/80 py-8 dark:border-slate-800">
+    <footer className="border-t border-emerald-100/80 py-8 dark:border-slate-800">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 text-sm text-slate-600 dark:text-slate-300 md:flex-row">
         <p>© 2026 Johnson Kaparthi</p>
         <div className="flex flex-wrap items-center justify-center gap-2">

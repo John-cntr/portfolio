@@ -80,7 +80,7 @@ export default function Hero() {
             {BADGES.map((badge) => (
               <span
                 key={badge}
-                className="rounded-full border border-orange-200 bg-white px-3.5 py-1.5 text-sm font-medium text-slate-700 shadow-sm dark:border-slate-600 dark:bg-slate-800 dark:text-slate-200"
+                className="rounded-full border border-emerald-200 bg-white px-3.5 py-1.5 text-sm font-medium text-slate-700 shadow-sm dark:border-slate-600 dark:bg-slate-800 dark:text-slate-200"
               >
                 {badge}
               </span>
@@ -90,7 +90,7 @@ export default function Hero() {
           <div className="mt-9 flex flex-wrap justify-center gap-4">
             <a
               href="#projects"
-              className="inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-white shadow-glow transition hover:-translate-y-0.5 hover:bg-[#e86d14]"
+              className="inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-white shadow-glow transition hover:-translate-y-0.5 hover:bg-primary/90"
             >
               View Projects <ArrowDownRight size={16} />
             </a>

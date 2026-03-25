@@ -9,7 +9,7 @@ export const projects = [
       "AI-powered chess engine with advanced evaluation logic, strategic search algorithms, and custom AI modes inspired by grandmasters.",
     image: zion,
     stack: ["Python", "AI Algorithms"],
-    github: "https://github.com/John-cntr/zion-chess-engine",
+    github: "https://github.com/John-cntr/zion_chess_bot",
     demo: "",
   },
   {
@@ -18,7 +18,7 @@ export const projects = [
       "Computer vision system that controls YouTube playback using hand gestures such as volume control, next video, and pause.",
     image: gesture,
     stack: ["Python", "OpenCV"],
-    github: "https://github.com/John-cntr/gesture-youtube-controller",
+    github: "https://github.com/John-cntr/yt-controller-with-hands-",
     demo: "",
   },
   {
