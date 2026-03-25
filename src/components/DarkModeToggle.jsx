@@ -6,7 +6,7 @@ export default function DarkModeToggle({ isDark, setIsDark }) {
       type="button"
       onClick={() => setIsDark((prev) => !prev)}
       aria-label="Toggle dark mode"
-      className="inline-flex h-10 w-10 items-center justify-center rounded-full border-2 border-ink bg-white text-ink transition hover:-translate-y-0.5 hover:shadow-toon"
+      className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-300/80 bg-white/70 text-slate-700 transition hover:border-slate-900 hover:text-slate-900 dark:border-slate-600 dark:bg-slate-800/80 dark:text-slate-200 dark:hover:border-slate-200 dark:hover:text-slate-100"
     >
       {isDark ? <Sun size={18} /> : <Moon size={18} />}
     </button>

@@ -49,7 +49,7 @@ export default function Hobbies() {
               viewport={{ once: true, amount: 0.25 }}
               transition={{ duration: 0.45, delay: index * 0.08 }}
             >
-              <div className="mb-4 inline-flex rounded-2xl border-2 border-ink bg-accent p-3 text-ink shadow-toon">
+              <div className="mb-4 inline-flex rounded-xl bg-slate-900/10 p-3 text-slate-800 dark:bg-white/10 dark:text-slate-100">
                 <Icon size={20} />
               </div>
               <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
