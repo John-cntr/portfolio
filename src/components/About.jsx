@@ -96,7 +96,7 @@ export default function About() {
               return (
                 <motion.div
                   key={step.title}
-                  className="group rounded-[20px] border border-white/60 bg-white/85 p-4 shadow-[0_8px_20px_rgba(15,23,42,0.08)] transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.01] hover:border-emerald-300/70 hover:shadow-[0_22px_40px_rgba(47,111,78,0.15)] dark:border-slate-600 dark:bg-slate-700/60 dark:hover:border-emerald-400/35"
+                  className="group rounded-[20px] border border-white/60 bg-white/85 p-4 shadow-[0_8px_20px_rgba(15,23,42,0.08)] transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.01] hover:border-slate-300/70 hover:shadow-[0_22px_40px_rgba(15,23,42,0.15)] dark:border-slate-600 dark:bg-slate-700/60 dark:hover:border-slate-500/35"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.2 }}
@@ -104,7 +104,7 @@ export default function About() {
                 >
                   <div className="flex items-start gap-3">
                     <motion.span
-                      className="mt-0.5 inline-flex rounded-lg bg-primary/12 p-2 text-primary"
+                      className="mt-0.5 inline-flex rounded-lg bg-slate-900/10 p-2 text-slate-900 dark:bg-white/10 dark:text-slate-100"
                       animate={{ y: [0, -2, 0] }}
                       transition={{
                         duration: 1.8,
@@ -137,7 +137,7 @@ export default function About() {
           transition={{ duration: 0.45, delay: 0.08 }}
         >
           <div className="flex items-center gap-2">
-            <GraduationCap size={18} className="text-primary" />
+            <GraduationCap size={18} className="text-slate-900 dark:text-slate-100" />
             <h3 className="text-xl font-semibold text-black dark:text-slate-100">
               Education Timeline
             </h3>
@@ -149,7 +149,7 @@ export default function About() {
 
           <div className="relative mt-6 pl-8">
             <motion.div
-              className="absolute left-[13px] top-1 w-[2px] rounded-full bg-gradient-to-b from-primary via-emerald-300/70 to-transparent"
+              className="absolute left-[13px] top-1 w-[2px] rounded-full bg-gradient-to-b from-slate-900/80 via-slate-400/70 to-transparent"
               initial={{ height: 0 }}
               whileInView={{ height: "92%" }}
               viewport={{ once: true, amount: 0.2 }}
@@ -171,7 +171,7 @@ export default function About() {
                     onMouseLeave={() => setHoveredEducation(null)}
                   >
                     <motion.span
-                      className="absolute -left-[27px] top-5 inline-flex h-3 w-3 rounded-full bg-primary"
+                      className="absolute -left-[27px] top-5 inline-flex h-3 w-3 rounded-full bg-slate-900 dark:bg-slate-100"
                       initial={{ scale: 0.5, opacity: 0.45 }}
                       whileInView={{ scale: 1, opacity: 1 }}
                       viewport={{ once: true }}
@@ -180,15 +180,15 @@ export default function About() {
                         isHovered
                           ? {
                               boxShadow:
-                                "0 0 0 8px rgba(47,111,78,0.18), 0 0 22px rgba(47,111,78,0.35)",
+                                "0 0 0 8px rgba(15,23,42,0.16), 0 0 22px rgba(15,23,42,0.28)",
                             }
                           : {
-                              boxShadow: "0 0 0 4px rgba(47,111,78,0.14)",
+                              boxShadow: "0 0 0 4px rgba(15,23,42,0.12)",
                             }
                       }
                     />
 
-                    <div className="group rounded-[20px] border border-white/60 bg-white/85 p-4 shadow-[0_8px_20px_rgba(15,23,42,0.08)] transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.01] hover:border-emerald-300/70 hover:shadow-[0_22px_40px_rgba(47,111,78,0.15)] dark:border-slate-600 dark:bg-slate-700/60 dark:hover:border-emerald-400/35">
+                    <div className="group rounded-[20px] border border-white/60 bg-white/85 p-4 shadow-[0_8px_20px_rgba(15,23,42,0.08)] transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.01] hover:border-slate-300/70 hover:shadow-[0_22px_40px_rgba(15,23,42,0.15)] dark:border-slate-600 dark:bg-slate-700/60 dark:hover:border-slate-500/35">
                       <h4 className="text-sm font-semibold text-black dark:text-slate-100">
                         {item.title}
                       </h4>
@@ -197,7 +197,7 @@ export default function About() {
                           {item.school}
                         </p>
                       ) : null}
-                      <p className="mt-1 text-xs font-semibold text-primary">
+                      <p className="mt-1 text-xs font-semibold text-slate-700 dark:text-slate-300">
                         {item.period}
                       </p>
                       <p className="mt-2 text-xs leading-relaxed text-slate-700 dark:text-slate-300">

@@ -55,7 +55,7 @@ export default function Hero() {
           transition={{ duration: 0.7 }}
           className="hero-main text-center"
         >
-          <p className="inline-flex items-center rounded-full border border-primary/25 bg-primary/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-primary">
+          <p className="inline-flex items-center rounded-full border border-slate-900/20 bg-slate-900/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-slate-900 dark:border-white/15 dark:bg-white/10 dark:text-slate-100">
             AI / ML Engineer
           </p>
 
@@ -80,7 +80,7 @@ export default function Hero() {
             {BADGES.map((badge) => (
               <span
                 key={badge}
-                className="rounded-full border border-emerald-200 bg-white px-3.5 py-1.5 text-sm font-medium text-slate-700 shadow-sm dark:border-slate-600 dark:bg-slate-800 dark:text-slate-200"
+                className="rounded-full border border-slate-200 bg-white px-3.5 py-1.5 text-sm font-medium text-slate-700 shadow-sm dark:border-slate-600 dark:bg-slate-800 dark:text-slate-200"
               >
                 {badge}
               </span>
@@ -90,13 +90,13 @@ export default function Hero() {
           <div className="mt-9 flex flex-wrap justify-center gap-4">
             <a
               href="#projects"
-              className="inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-white shadow-glow transition hover:-translate-y-0.5 hover:bg-primary/90"
+              className="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-glow transition hover:-translate-y-0.5 hover:bg-slate-800"
             >
               View Projects <ArrowDownRight size={16} />
             </a>
             <a
               href="/resume.pdf"
-              className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-700 transition hover:-translate-y-0.5 hover:border-primary hover:text-primary dark:border-slate-600 dark:bg-slate-800 dark:text-slate-200"
+              className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-700 transition hover:-translate-y-0.5 hover:border-slate-900 hover:text-slate-900 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-200 dark:hover:border-slate-200 dark:hover:text-slate-100"
             >
               Download Resume <Download size={16} />
             </a>
